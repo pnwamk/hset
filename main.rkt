@@ -32,9 +32,7 @@
          for*/hseteq
          in-hset)
 
-(provide-for-cond-contract hsetof)
-
-(define-for-cond-contract (hsetof c) (hash/c c #t #:immutable #t #:flat? #t))
+(define (hsetof c) (hash/c c #t #:immutable #t #:flat? #t))
 
 (define build-hset
   (case-lambda
