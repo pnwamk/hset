@@ -30,7 +30,8 @@
          for/hseteqv
          for*/hset
          for*/hseteq
-         in-hset)
+         in-hset
+         hsetof)
 
 (define (hsetof c) (hash/c c #t #:immutable #t #:flat? #t))
 
